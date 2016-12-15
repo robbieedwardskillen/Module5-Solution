@@ -6,14 +6,16 @@
     <label>Phone Number: {{registeredInfoController.info.phone}}</label><br />
     <label>Favorite Dish: {{registeredInfoController.info.dish}}</label><br /><br />
 
-	<span ng-if="registeredInfoController.valid == true">
-	      <div class="menu-item-photo">
+<div class="menu-item-photo">
+	<div ng-if="registeredInfoController.valid == true">
+	      <div>
 	 		<div>{{registeredInfoController.info.dish}}</div>
 	        <img class="img-responsive" width="250" height="150" ng-src="{{registeredInfoController.basePath}}/images/{{registeredInfoController.info.dish}}.jpg" alt="{{registeredInfoController.info.dish}}">
 	      </div>
-	</span>
+	</div>
 	<div ng-if="registeredInfoController.valid == false && registeredInfoController.info.firstName">
 	No such menu number exists</div>
+</div>
 <!-- 	<div ng-if="registeredInfoController.valid == true">
 		 <div class="menu-item-tile col-md-6">
 		  <div class="row">
