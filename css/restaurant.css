@@ -8,13 +8,6 @@ body {
 .initial-loading {
   margin-top: 60px;
 }
-.favMenuPic{
-  margin-bottom: 60px;
-  position: fixed;
-  left: 30px;
-  border: 2px solid #3F0C1F;
-  max-width: 250px;
-}
 /** HEADER **/
 #header-nav {
   background-color: #f6b319;
