@@ -6,9 +6,9 @@
     <label>Phone Number: {{registeredInfoController.info.phone}}</label><br />
     <label>Favorite Dish: {{registeredInfoController.info.dish}}</label><br /><br />
 
-<div class="menu-item-photo">
+<div class="favMenuPic">
 	<div ng-if="registeredInfoController.valid == true">
-	      <div>
+	      <div class="menu-item-photo">
 	 		<div>{{registeredInfoController.info.dish}}</div>
 	        <img class="img-responsive" width="250" height="150" ng-src="{{registeredInfoController.basePath}}/images/{{registeredInfoController.info.dish}}.jpg" alt="{{registeredInfoController.info.dish}}">
 	      </div>
