@@ -9,8 +9,7 @@ body {
   margin-top: 60px;
 }
 .favMenuPic{
-  float:left;
-  margin-bottom: 60px;
+  float: right;
 }
 /** HEADER **/
 #header-nav {
