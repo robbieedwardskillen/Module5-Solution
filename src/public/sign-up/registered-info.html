@@ -6,12 +6,12 @@
     <label>Phone Number: {{registeredInfoController.info.phone}}</label><br />
     <label>Favorite Dish: {{registeredInfoController.info.dish}}</label><br /><br />
 
-	<div ng-if="registeredInfoController.valid == true">
+	<span ng-if="registeredInfoController.valid == true">
 	      <div class="menu-item-photo">
 	 		<div>{{registeredInfoController.info.dish}}</div>
 	        <img class="img-responsive" width="250" height="150" ng-src="{{registeredInfoController.basePath}}/images/{{registeredInfoController.info.dish}}.jpg" alt="{{registeredInfoController.info.dish}}">
 	      </div>
-	</div>
+	</span>
 	<div ng-if="registeredInfoController.valid == false && registeredInfoController.info.firstName">
 	No such menu number exists</div>
 <!-- 	<div ng-if="registeredInfoController.valid == true">
