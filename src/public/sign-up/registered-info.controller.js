@@ -14,6 +14,7 @@ function RegisteredInfoController(SubmissionService, MenuService, ApiPath, allMe
 	for(var i = 0; i < allMenuItems.menu_items.length; i++){
 		if (allMenuItems.menu_items[i].short_name == $ctrl.info.dish){
 			$ctrl.valid = true;
+			console.log(allMenuItems.menu_items[i].name);
 			$ctrl.favDish = allMenuItems.menu_items[i].name;
 		}
 	}
