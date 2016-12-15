@@ -1,0 +1,15 @@
+
+ <form name="regForm" novalidate>
+    <label>First Name: <input type="text" name="firstName" ng-model="signUpCtrl.firstName" required class="submission"/></label>
+    <span ng-if="regForm.firstName.$error.required && regForm.firstName.$touched">First name required</span><br />
+    <label>Last Name: <input type="text" name="lastName" ng-model="signUpCtrl.lastName" required class="submission"/></label>
+    <span ng-if="regForm.lastName.$error.required && regForm.lastName.$touched">Last name required</span><br />
+    <label>E-mail: <input type="email" name="email" ng-model="signUpCtrl.email" required class="submission"/></label>
+    <span ng-if="regForm.email.$error.required && regForm.email.$touched">Email required</span><br />
+    <label>Phone Number: <input type="tel" name="phone" ng-model="signUpCtrl.phone" required class="submission"/></label>
+    <span ng-if="regForm.phone.$error.required && regForm.phone.$touched">Phone number required</span><br />
+    <label>Menu # of Favorite Dish: <input type="text" name="dish" ng-model="signUpCtrl.dish"ng-maxlength="2" class="submission"/></label>
+    <span ng-if="regForm.dish.$error.maxlength">Max length is 2</span><br /><br /><br />
+    <button ng-click="signUpCtrl.submit()" class="submission">Submit</button>
+    <div ng-if="signUpCtrl.submitted">Your Information has been saved</div>
+ </form>
